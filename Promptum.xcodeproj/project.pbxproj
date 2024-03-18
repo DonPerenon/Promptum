@@ -11,6 +11,11 @@
 		CEB7EB162BA89ED50032ECDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7EB152BA89ED50032ECDB /* ContentView.swift */; };
 		CEB7EB182BA89ED50032ECDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB7EB172BA89ED50032ECDB /* Assets.xcassets */; };
 		CEB7EB1B2BA89ED50032ECDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB7EB1A2BA89ED50032ECDB /* Preview Assets.xcassets */; };
+		CEB7EB222BA8A1B10032ECDB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7EB212BA8A1B10032ECDB /* Constants.swift */; };
+		CEB7EB242BA8A1F80032ECDB /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7EB232BA8A1F80032ECDB /* OpenAIService.swift */; };
+		CEB7EB272BA8A2330032ECDB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEB7EB262BA8A2330032ECDB /* Alamofire */; };
+		CEB7EB292BA8A2330032ECDB /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CEB7EB282BA8A2330032ECDB /* AlamofireDynamic */; };
+		CEB7EB2C2BA8A2440032ECDB /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEB7EB2B2BA8A2440032ECDB /* OpenAISwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,8 @@
 		CEB7EB152BA89ED50032ECDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEB7EB172BA89ED50032ECDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB7EB1A2BA89ED50032ECDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEB7EB212BA8A1B10032ECDB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEB7EB232BA8A1F80032ECDB /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB7EB272BA8A2330032ECDB /* Alamofire in Frameworks */,
+				CEB7EB2C2BA8A2440032ECDB /* OpenAISwift in Frameworks */,
+				CEB7EB292BA8A2330032ECDB /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +63,8 @@
 			children = (
 				CEB7EB132BA89ED50032ECDB /* PromptumApp.swift */,
 				CEB7EB152BA89ED50032ECDB /* ContentView.swift */,
+				CEB7EB212BA8A1B10032ECDB /* Constants.swift */,
+				CEB7EB232BA8A1F80032ECDB /* OpenAIService.swift */,
 				CEB7EB172BA89ED50032ECDB /* Assets.xcassets */,
 				CEB7EB192BA89ED50032ECDB /* Preview Content */,
 			);
@@ -83,6 +95,11 @@
 			dependencies = (
 			);
 			name = Promptum;
+			packageProductDependencies = (
+				CEB7EB262BA8A2330032ECDB /* Alamofire */,
+				CEB7EB282BA8A2330032ECDB /* AlamofireDynamic */,
+				CEB7EB2B2BA8A2440032ECDB /* OpenAISwift */,
+			);
 			productName = Promptum;
 			productReference = CEB7EB102BA89ED50032ECDB /* Promptum.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,10 @@
 				Base,
 			);
 			mainGroup = CEB7EB072BA89ED50032ECDB;
+			packageReferences = (
+				CEB7EB252BA8A2330032ECDB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CEB7EB2A2BA8A2440032ECDB /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = CEB7EB112BA89ED50032ECDB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +160,8 @@
 			files = (
 				CEB7EB162BA89ED50032ECDB /* ContentView.swift in Sources */,
 				CEB7EB142BA89ED50032ECDB /* PromptumApp.swift in Sources */,
+				CEB7EB222BA8A1B10032ECDB /* Constants.swift in Sources */,
+				CEB7EB242BA8A1F80032ECDB /* OpenAIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +367,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEB7EB252BA8A2330032ECDB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+		CEB7EB2A2BA8A2440032ECDB /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEB7EB262BA8A2330032ECDB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEB7EB252BA8A2330032ECDB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CEB7EB282BA8A2330032ECDB /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEB7EB252BA8A2330032ECDB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		CEB7EB2B2BA8A2440032ECDB /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEB7EB2A2BA8A2440032ECDB /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEB7EB082BA89ED50032ECDB /* Project object */;
 }
