@@ -4,7 +4,6 @@
 //
 //  Created by Виктор Иванов on 07.03.2024.
 //
-// API KEY: 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
 //
 
 
