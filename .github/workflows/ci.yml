@@ -1,34 +1,21 @@
-on: [pull_request]
+name: Code Formatter
+
+on:
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  swift-format-lint:
+  format_code:
     runs-on: ubuntu-latest
-    name: Swift-Format
+    timeout-minutes: 5
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Restore swift build cache
-        uses: actions/cache@v1
-        with:
-          path: .build
-          key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
-          restore-keys: |
-            ${{ runner.os }}-spm-
+      - name: Install swift-format
+        run: brew install swiftformat
 
-      - name: swift build
-        run: |
-          if [ -d ".build" ]; then
-            if ! [ -x "$(command -v swift-format)" ]; then
-              sudo cp -f .build/release/swift-format /usr/local/bin/swift-format
-            fi
-          else
-            git clone -b swift-5.2-branch https://github.com/apple/swift-format.git
-            cd swift-format
-            swift build --disable-sandbox -c release
-            mv .build .. && cd ..
-            sudo cp -f .build/release/swift-format /usr/local/bin/swift-format
-          fi
-
-      - name: Lint
-        uses: Iron-Ham/swift-format-linter-action@v5
+      - name: Format code
+        run: swiftformat --config ./swift-format-config.yml --lint .
