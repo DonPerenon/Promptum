@@ -1,4 +1,4 @@
-name: Code Formatter
+name: Code Linter
 
 on:
   pull_request:
@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Swiftformat
-        run: brew install swiftformat
+        run: brew install swift-format
 
       - name: Format code
-        run: swiftformat --lint --swiftversion 5.5 .
+        run: swift-format --lint .
