@@ -17,9 +17,6 @@ jobs:
       - name: Install swift-format
         run: brew install swiftformat
 
-      - name: Copy .swiftformat
-        run: cp .swiftformat ./.swiftformat
-
       - name: Format code
         run: swiftformat --lint --config .swiftformat --swiftversion 5.5 .
 
