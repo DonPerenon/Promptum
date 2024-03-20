@@ -1,0 +1,20 @@
+version: 0.47.4
+
+lint:
+  AllPublicDeclarationsHaveDocumentation: false
+  AlwaysUseLowerCamelCase: true
+  AmbiguousTrailingClosureOverload: true
+  BeginDocumentationCommentWithOneLineSummary: false
+  DontRepeatTypeInStaticProperties: true
+  FileScopedDeclarationPrivacy: true
+  IdentifiersMustBeASCII: true
+  NeverForceUnwrap: false
+  NeverUseForceTry: false
+  NeverUseImplicitlyUnwrappedOptionals: false
+  NoBlockComments: true
+  NoLeadingUnderscores: false
+  OnlyOneTrailingClosureArgument: true
+  UseLetInEveryBoundCaseVariable: true
+  UseShorthandTypeNames: true
+  UseSynthesizedInitializer: true
+  ValidateDocumentationComments: false
