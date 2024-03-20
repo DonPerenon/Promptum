@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		322D391847B16B76BFDEA433 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A5ADB7C9C22BEDF101E4B4 /* Preview Assets.xcassets */; };
 		33046B9B1100E8BF35FF35ED /* PromptumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC010ADCC883ABCBD672F8 /* PromptumTests.swift */; };
 		55A7E899F8EB99FDE172F87B /* TuistBundle+Promptum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D9976A7C28F008ECE24777 /* TuistBundle+Promptum.swift */; };
 		A48A517E0F8BC2A3CE267005 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A5F1D6D94B53F3F710541A /* ContentView.swift */; };
@@ -16,9 +15,9 @@
 		AEE833432BAB520000786D60 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = AEE833422BAB520000786D60 /* OpenAISwift */; };
 		AEE833492BAB552D00786D60 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE833482BAB552D00786D60 /* OpenAIService.swift */; };
 		AEE8334B2BAB553400786D60 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8334A2BAB553400786D60 /* Constants.swift */; };
+		AEE8334D2BAB564000786D60 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = AEE8334C2BAB564000786D60 /* Resources */; };
 		CD635E5E3B16DF7A3DA118B1 /* PromptumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989E1D31A60BBDF0B996CBD5 /* PromptumApp.swift */; };
 		D849918EC95CF6A3695BF7B6 /* TuistAssets+Promptum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3B42BC020227027451E0E /* TuistAssets+Promptum.swift */; };
-		E3FEEB886716D26EEABA6ADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D62ACB94A98635FDA315AB /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +59,12 @@
 		1E5F27CD7636A81EB28E1093 /* PromptumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PromptumTests-Info.plist"; sourceTree = "<group>"; };
 		24E38964266CC7B5202EDFA6 /* PromptumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromptumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D9976A7C28F008ECE24777 /* TuistBundle+Promptum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Promptum.swift"; sourceTree = "<group>"; };
-		50D62ACB94A98635FDA315AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		91A5ADB7C9C22BEDF101E4B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		989E1D31A60BBDF0B996CBD5 /* PromptumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptumApp.swift; sourceTree = "<group>"; };
 		A0DC010ADCC883ABCBD672F8 /* PromptumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptumTests.swift; sourceTree = "<group>"; };
 		A6ABA019FB63D6C7B471D17D /* Promptum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Promptum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE833482BAB552D00786D60 /* OpenAIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		AEE8334A2BAB553400786D60 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AEE8334C2BAB564000786D60 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		D9A5F1D6D94B53F3F710541A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +101,7 @@
 		2107FCC0F56B52695A95A383 /* Promptum */ = {
 			isa = PBXGroup;
 			children = (
-				E297C10B1078767935C667BB /* Resources */,
+				AEE8334C2BAB564000786D60 /* Resources */,
 				AEA293046E28FC07E6223034 /* Sources */,
 				8C8C9ABF352D07C5F823B547 /* Tests */,
 			);
@@ -171,14 +169,6 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		BA39D4FF409EC49716B337AA /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				91A5ADB7C9C22BEDF101E4B4 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		DA8CF48606FAF6896A3AACAE /* Derived */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,15 +185,6 @@
 				2107FCC0F56B52695A95A383 /* Promptum */,
 			);
 			name = Project;
-			sourceTree = "<group>";
-		};
-		E297C10B1078767935C667BB /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BA39D4FF409EC49716B337AA /* Preview Content */,
-				50D62ACB94A98635FDA315AB /* Assets.xcassets */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,8 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3FEEB886716D26EEABA6ADF /* Assets.xcassets in Resources */,
-				322D391847B16B76BFDEA433 /* Preview Assets.xcassets in Resources */,
+				AEE8334D2BAB564000786D60 /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
