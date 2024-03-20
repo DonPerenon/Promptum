@@ -62,7 +62,6 @@ struct ContentView: View {
             if message.sender == .gpt { Spacer() }
         }
     }
-    
     private func sendMessage() {
         messageText = ""
         print(messageText)
