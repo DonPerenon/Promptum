@@ -7,88 +7,216 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEB7EB142BA89ED50032ECDB /* PromptumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7EB132BA89ED50032ECDB /* PromptumApp.swift */; };
-		CEB7EB162BA89ED50032ECDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7EB152BA89ED50032ECDB /* ContentView.swift */; };
-		CEB7EB182BA89ED50032ECDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB7EB172BA89ED50032ECDB /* Assets.xcassets */; };
-		CEB7EB1B2BA89ED50032ECDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB7EB1A2BA89ED50032ECDB /* Preview Assets.xcassets */; };
-		CEB7EB222BA8A1B10032ECDB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7EB212BA8A1B10032ECDB /* Constants.swift */; };
-		CEB7EB242BA8A1F80032ECDB /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7EB232BA8A1F80032ECDB /* OpenAIService.swift */; };
-		CEB7EB272BA8A2330032ECDB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEB7EB262BA8A2330032ECDB /* Alamofire */; };
-		CEB7EB292BA8A2330032ECDB /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CEB7EB282BA8A2330032ECDB /* AlamofireDynamic */; };
-		CEB7EB2C2BA8A2440032ECDB /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEB7EB2B2BA8A2440032ECDB /* OpenAISwift */; };
+		322D391847B16B76BFDEA433 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A5ADB7C9C22BEDF101E4B4 /* Preview Assets.xcassets */; };
+		33046B9B1100E8BF35FF35ED /* PromptumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC010ADCC883ABCBD672F8 /* PromptumTests.swift */; };
+		55A7E899F8EB99FDE172F87B /* TuistBundle+Promptum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D9976A7C28F008ECE24777 /* TuistBundle+Promptum.swift */; };
+		A48A517E0F8BC2A3CE267005 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A5F1D6D94B53F3F710541A /* ContentView.swift */; };
+		AEE8333B2BAB511E00786D60 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AEE8333A2BAB511E00786D60 /* Alamofire */; };
+		AEE8333D2BAB511E00786D60 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AEE8333C2BAB511E00786D60 /* AlamofireDynamic */; };
+		AEE833432BAB520000786D60 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = AEE833422BAB520000786D60 /* OpenAISwift */; };
+		AEE833492BAB552D00786D60 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE833482BAB552D00786D60 /* OpenAIService.swift */; };
+		AEE8334B2BAB553400786D60 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8334A2BAB553400786D60 /* Constants.swift */; };
+		CD635E5E3B16DF7A3DA118B1 /* PromptumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989E1D31A60BBDF0B996CBD5 /* PromptumApp.swift */; };
+		D849918EC95CF6A3695BF7B6 /* TuistAssets+Promptum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3B42BC020227027451E0E /* TuistAssets+Promptum.swift */; };
+		E3FEEB886716D26EEABA6ADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D62ACB94A98635FDA315AB /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FE2A7B9C6B2529A9BBCDA1CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13BF14E40FA2B47BC49CBC76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DB3756927A98069EAF40D6F;
+			remoteInfo = Promptum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4824082853F125EC333B6EF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E358BAA20B761AAF4926AFA1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		CEB7EB102BA89ED50032ECDB /* Promptum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Promptum.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEB7EB132BA89ED50032ECDB /* PromptumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptumApp.swift; sourceTree = "<group>"; };
-		CEB7EB152BA89ED50032ECDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CEB7EB172BA89ED50032ECDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEB7EB1A2BA89ED50032ECDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CEB7EB212BA8A1B10032ECDB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		CEB7EB232BA8A1F80032ECDB /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		01A3B42BC020227027451E0E /* TuistAssets+Promptum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+Promptum.swift"; sourceTree = "<group>"; };
+		0929FFBED7188A54153199DF /* Promptum-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Promptum-Info.plist"; sourceTree = "<group>"; };
+		1E5F27CD7636A81EB28E1093 /* PromptumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PromptumTests-Info.plist"; sourceTree = "<group>"; };
+		24E38964266CC7B5202EDFA6 /* PromptumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromptumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D9976A7C28F008ECE24777 /* TuistBundle+Promptum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Promptum.swift"; sourceTree = "<group>"; };
+		50D62ACB94A98635FDA315AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91A5ADB7C9C22BEDF101E4B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		989E1D31A60BBDF0B996CBD5 /* PromptumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptumApp.swift; sourceTree = "<group>"; };
+		A0DC010ADCC883ABCBD672F8 /* PromptumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptumTests.swift; sourceTree = "<group>"; };
+		A6ABA019FB63D6C7B471D17D /* Promptum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Promptum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE833482BAB552D00786D60 /* OpenAIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		AEE8334A2BAB553400786D60 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D9A5F1D6D94B53F3F710541A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CEB7EB0D2BA89ED50032ECDB /* Frameworks */ = {
+		8C0E16A8651266E973AFBD49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB7EB272BA8A2330032ECDB /* Alamofire in Frameworks */,
-				CEB7EB2C2BA8A2440032ECDB /* OpenAISwift in Frameworks */,
-				CEB7EB292BA8A2330032ECDB /* AlamofireDynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D7D0515095ACBCC7E47BCF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEE8333B2BAB511E00786D60 /* Alamofire in Frameworks */,
+				AEE833432BAB520000786D60 /* OpenAISwift in Frameworks */,
+				AEE8333D2BAB511E00786D60 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CEB7EB072BA89ED50032ECDB = {
+		15C943120B10EEEF533A5585 /* InfoPlists */ = {
 			isa = PBXGroup;
 			children = (
-				CEB7EB122BA89ED50032ECDB /* Promptum */,
-				CEB7EB112BA89ED50032ECDB /* Products */,
+				0929FFBED7188A54153199DF /* Promptum-Info.plist */,
+				1E5F27CD7636A81EB28E1093 /* PromptumTests-Info.plist */,
 			);
+			path = InfoPlists;
 			sourceTree = "<group>";
 		};
-		CEB7EB112BA89ED50032ECDB /* Products */ = {
+		2107FCC0F56B52695A95A383 /* Promptum */ = {
 			isa = PBXGroup;
 			children = (
-				CEB7EB102BA89ED50032ECDB /* Promptum.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CEB7EB122BA89ED50032ECDB /* Promptum */ = {
-			isa = PBXGroup;
-			children = (
-				CEB7EB132BA89ED50032ECDB /* PromptumApp.swift */,
-				CEB7EB152BA89ED50032ECDB /* ContentView.swift */,
-				CEB7EB212BA8A1B10032ECDB /* Constants.swift */,
-				CEB7EB232BA8A1F80032ECDB /* OpenAIService.swift */,
-				CEB7EB172BA89ED50032ECDB /* Assets.xcassets */,
-				CEB7EB192BA89ED50032ECDB /* Preview Content */,
+				E297C10B1078767935C667BB /* Resources */,
+				AEA293046E28FC07E6223034 /* Sources */,
+				8C8C9ABF352D07C5F823B547 /* Tests */,
 			);
 			path = Promptum;
 			sourceTree = "<group>";
 		};
-		CEB7EB192BA89ED50032ECDB /* Preview Content */ = {
+		3004E4D6083E5BE1CF12DAEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEB7EB1A2BA89ED50032ECDB /* Preview Assets.xcassets */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		444DB5244234F885AB1FDC3E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				01A3B42BC020227027451E0E /* TuistAssets+Promptum.swift */,
+				39D9976A7C28F008ECE24777 /* TuistBundle+Promptum.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		454600C9444D5FC7BB2D8AB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABA019FB63D6C7B471D17D /* Promptum.app */,
+				24E38964266CC7B5202EDFA6 /* PromptumTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AE57B7845530C85F4179959 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cache;
+			sourceTree = "<group>";
+		};
+		88B715210FE87107D9F2268C = {
+			isa = PBXGroup;
+			children = (
+				DD2828F327302816AC06A4D6 /* Project */,
+				3004E4D6083E5BE1CF12DAEA /* Frameworks */,
+				6AE57B7845530C85F4179959 /* Cache */,
+				454600C9444D5FC7BB2D8AB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C8C9ABF352D07C5F823B547 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A0DC010ADCC883ABCBD672F8 /* PromptumTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		AEA293046E28FC07E6223034 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AEE8334A2BAB553400786D60 /* Constants.swift */,
+				AEE833482BAB552D00786D60 /* OpenAIService.swift */,
+				D9A5F1D6D94B53F3F710541A /* ContentView.swift */,
+				989E1D31A60BBDF0B996CBD5 /* PromptumApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BA39D4FF409EC49716B337AA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				91A5ADB7C9C22BEDF101E4B4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA8CF48606FAF6896A3AACAE /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				15C943120B10EEEF533A5585 /* InfoPlists */,
+				444DB5244234F885AB1FDC3E /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		DD2828F327302816AC06A4D6 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				DA8CF48606FAF6896A3AACAE /* Derived */,
+				2107FCC0F56B52695A95A383 /* Promptum */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		E297C10B1078767935C667BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA39D4FF409EC49716B337AA /* Preview Content */,
+				50D62ACB94A98635FDA315AB /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEB7EB0F2BA89ED50032ECDB /* Promptum */ = {
+		7DB3756927A98069EAF40D6F /* Promptum */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEB7EB1E2BA89ED50032ECDB /* Build configuration list for PBXNativeTarget "Promptum" */;
+			buildConfigurationList = 7D6A4781BDBA2614E4C1E5CD /* Build configuration list for PBXNativeTarget "Promptum" */;
 			buildPhases = (
-				CEB7EB0C2BA89ED50032ECDB /* Sources */,
-				CEB7EB0D2BA89ED50032ECDB /* Frameworks */,
-				CEB7EB0E2BA89ED50032ECDB /* Resources */,
+				E1B60DF0CBFA655C2CF283E4 /* Sources */,
+				9993C3F17BDBF540EA164EEB /* Resources */,
+				E358BAA20B761AAF4926AFA1 /* Embed Frameworks */,
+				8D7D0515095ACBCC7E47BCF8 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,86 +224,187 @@
 			);
 			name = Promptum;
 			packageProductDependencies = (
-				CEB7EB262BA8A2330032ECDB /* Alamofire */,
-				CEB7EB282BA8A2330032ECDB /* AlamofireDynamic */,
-				CEB7EB2B2BA8A2440032ECDB /* OpenAISwift */,
+				AEE8333A2BAB511E00786D60 /* Alamofire */,
+				AEE8333C2BAB511E00786D60 /* AlamofireDynamic */,
+				AEE833422BAB520000786D60 /* OpenAISwift */,
 			);
 			productName = Promptum;
-			productReference = CEB7EB102BA89ED50032ECDB /* Promptum.app */;
+			productReference = A6ABA019FB63D6C7B471D17D /* Promptum.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9DD0C4616A167C3BA567D06D /* PromptumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6EFCBC69CFD1950DF27468F /* Build configuration list for PBXNativeTarget "PromptumTests" */;
+			buildPhases = (
+				1683B717E342D1A450A13964 /* Sources */,
+				399248D98C6F8137A0923904 /* Resources */,
+				A4824082853F125EC333B6EF /* Embed Frameworks */,
+				8C0E16A8651266E973AFBD49 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8378B21D2835EFD59AA5E890 /* PBXTargetDependency */,
+			);
+			name = PromptumTests;
+			productName = PromptumTests;
+			productReference = 24E38964266CC7B5202EDFA6 /* PromptumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CEB7EB082BA89ED50032ECDB /* Project object */ = {
+		13BF14E40FA2B47BC49CBC76 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					CEB7EB0F2BA89ED50032ECDB = {
-						CreatedOnToolsVersion = 15.1;
+					9DD0C4616A167C3BA567D06D = {
+						TestTargetID = 7DB3756927A98069EAF40D6F;
 					};
 				};
 			};
-			buildConfigurationList = CEB7EB0B2BA89ED50032ECDB /* Build configuration list for PBXProject "Promptum" */;
+			buildConfigurationList = D30F6A2866C01FDDCE8D4782 /* Build configuration list for PBXProject "Promptum" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = CEB7EB072BA89ED50032ECDB;
+			mainGroup = 88B715210FE87107D9F2268C;
 			packageReferences = (
-				CEB7EB252BA8A2330032ECDB /* XCRemoteSwiftPackageReference "Alamofire" */,
-				CEB7EB2A2BA8A2440032ECDB /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				AEE833392BAB511E00786D60 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				AEE833412BAB520000786D60 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
 			);
-			productRefGroup = CEB7EB112BA89ED50032ECDB /* Products */;
+			productRefGroup = 454600C9444D5FC7BB2D8AB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEB7EB0F2BA89ED50032ECDB /* Promptum */,
+				7DB3756927A98069EAF40D6F /* Promptum */,
+				9DD0C4616A167C3BA567D06D /* PromptumTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CEB7EB0E2BA89ED50032ECDB /* Resources */ = {
+		399248D98C6F8137A0923904 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB7EB1B2BA89ED50032ECDB /* Preview Assets.xcassets in Resources */,
-				CEB7EB182BA89ED50032ECDB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9993C3F17BDBF540EA164EEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3FEEB886716D26EEABA6ADF /* Assets.xcassets in Resources */,
+				322D391847B16B76BFDEA433 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CEB7EB0C2BA89ED50032ECDB /* Sources */ = {
+		1683B717E342D1A450A13964 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB7EB162BA89ED50032ECDB /* ContentView.swift in Sources */,
-				CEB7EB142BA89ED50032ECDB /* PromptumApp.swift in Sources */,
-				CEB7EB222BA8A1B10032ECDB /* Constants.swift in Sources */,
-				CEB7EB242BA8A1F80032ECDB /* OpenAIService.swift in Sources */,
+				33046B9B1100E8BF35FF35ED /* PromptumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B60DF0CBFA655C2CF283E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D849918EC95CF6A3695BF7B6 /* TuistAssets+Promptum.swift in Sources */,
+				55A7E899F8EB99FDE172F87B /* TuistBundle+Promptum.swift in Sources */,
+				AEE833492BAB552D00786D60 /* OpenAIService.swift in Sources */,
+				A48A517E0F8BC2A3CE267005 /* ContentView.swift in Sources */,
+				CD635E5E3B16DF7A3DA118B1 /* PromptumApp.swift in Sources */,
+				AEE8334B2BAB553400786D60 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8378B21D2835EFD59AA5E890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Promptum;
+			target = 7DB3756927A98069EAF40D6F /* Promptum */;
+			targetProxy = FE2A7B9C6B2529A9BBCDA1CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		CEB7EB1C2BA89ED50032ECDB /* Debug */ = {
+		5FD4AFF0A4358324800FF28A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/PromptumTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.PromptumTests;
+				PRODUCT_NAME = PromptumTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Promptum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Promptum";
+				TEST_TARGET_NAME = Promptum;
+			};
+			name = Release;
+		};
+		62F7D0AD6B2A4F8243CC14AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/Promptum-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.Promptum;
+				PRODUCT_NAME = Promptum;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		68421BF11729C1A0CB2A5BBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -202,11 +431,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -220,25 +450,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		CEB7EB1D2BA89ED50032ECDB /* Release */ = {
+		7ACE8DD2CE8C9A516FDC7B3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -265,11 +492,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -277,91 +505,94 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		CEB7EB1F2BA89ED50032ECDB /* Debug */ = {
+		82C5AA3FC21EF3E2522D118F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Promptum/Preview Content\"";
-				DEVELOPMENT_TEAM = 35Z38V75VU;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = "Derived/InfoPlists/Promptum-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = IvanovViktor.Promptum;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.Promptum;
+				PRODUCT_NAME = Promptum;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		CEB7EB202BA89ED50032ECDB /* Release */ = {
+		BF3FDD7D524FC71602C6F0D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Promptum/Preview Content\"";
-				DEVELOPMENT_TEAM = 35Z38V75VU;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/PromptumTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = IvanovViktor.Promptum;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.PromptumTests;
+				PRODUCT_NAME = PromptumTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Promptum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Promptum";
+				TEST_TARGET_NAME = Promptum;
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEB7EB0B2BA89ED50032ECDB /* Build configuration list for PBXProject "Promptum" */ = {
+		7D6A4781BDBA2614E4C1E5CD /* Build configuration list for PBXNativeTarget "Promptum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEB7EB1C2BA89ED50032ECDB /* Debug */,
-				CEB7EB1D2BA89ED50032ECDB /* Release */,
+				82C5AA3FC21EF3E2522D118F /* Debug */,
+				62F7D0AD6B2A4F8243CC14AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEB7EB1E2BA89ED50032ECDB /* Build configuration list for PBXNativeTarget "Promptum" */ = {
+		A6EFCBC69CFD1950DF27468F /* Build configuration list for PBXNativeTarget "PromptumTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEB7EB1F2BA89ED50032ECDB /* Debug */,
-				CEB7EB202BA89ED50032ECDB /* Release */,
+				BF3FDD7D524FC71602C6F0D9 /* Debug */,
+				5FD4AFF0A4358324800FF28A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D30F6A2866C01FDDCE8D4782 /* Build configuration list for PBXProject "Promptum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68421BF11729C1A0CB2A5BBC /* Debug */,
+				7ACE8DD2CE8C9A516FDC7B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -369,15 +600,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CEB7EB252BA8A2330032ECDB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		AEE833392BAB511E00786D60 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.9.0;
 			};
 		};
-		CEB7EB2A2BA8A2440032ECDB /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+		AEE833412BAB520000786D60 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
 			requirement = {
@@ -388,22 +619,22 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CEB7EB262BA8A2330032ECDB /* Alamofire */ = {
+		AEE8333A2BAB511E00786D60 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CEB7EB252BA8A2330032ECDB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = AEE833392BAB511E00786D60 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		CEB7EB282BA8A2330032ECDB /* AlamofireDynamic */ = {
+		AEE8333C2BAB511E00786D60 /* AlamofireDynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CEB7EB252BA8A2330032ECDB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = AEE833392BAB511E00786D60 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = AlamofireDynamic;
 		};
-		CEB7EB2B2BA8A2440032ECDB /* OpenAISwift */ = {
+		AEE833422BAB520000786D60 /* OpenAISwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CEB7EB2A2BA8A2440032ECDB /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			package = AEE833412BAB520000786D60 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
 			productName = OpenAISwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = CEB7EB082BA89ED50032ECDB /* Project object */;
+	rootObject = 13BF14E40FA2B47BC49CBC76 /* Project object */;
 }
