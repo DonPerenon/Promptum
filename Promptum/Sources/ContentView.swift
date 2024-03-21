@@ -6,16 +6,14 @@
 //
 //
 
-
 import OpenAISwift
 import SwiftUI
 
 struct ContentView: View {
-    
     @State private var chatMessages: [ChatMessage] = ChatMessage.sampleMessages
     @State private var messageText: String = ""
     let openAIService = OpenAIService()
-    
+
     var body: some View {
         VStack {
             ScrollView {
@@ -26,9 +24,7 @@ struct ContentView: View {
                 }
             }
             HStack {
-                TextField("Enter a message...", text: $messageText) {
-                    
-                }
+                TextField("Enter a message...", text: $messageText) {}
                     .padding()
                     .background(.gray.opacity(0.1))
                     .cornerRadius(12)
@@ -41,16 +37,14 @@ struct ContentView: View {
                         .background(.black)
                         .cornerRadius(12)
                 }
-                
             }
-            
         }
         .padding()
         .onAppear {
             openAIService.sendMessage(message: "2 + 2 = ?")
         }
     }
-    
+
     private func messageView(message: ChatMessage) -> some View {
         HStack {
             if message.sender == .me { Spacer() }
@@ -62,14 +56,12 @@ struct ContentView: View {
             if message.sender == .gpt { Spacer() }
         }
     }
-    
+
     private func sendMessage() {
         messageText = ""
         print(messageText)
     }
-    
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
@@ -94,6 +86,6 @@ extension ChatMessage {
         ChatMessage(id: UUID().uuidString, content: "Hello", dateCreated: Date(), sender: .me),
         ChatMessage(id: UUID().uuidString, content: "Hello", dateCreated: Date(), sender: .gpt),
         ChatMessage(id: UUID().uuidString, content: "Hello", dateCreated: Date(), sender: .me),
-        ChatMessage(id: UUID().uuidString, content: "Hello", dateCreated: Date(), sender: .gpt)
+        ChatMessage(id: UUID().uuidString, content: "Hello", dateCreated: Date(), sender: .gpt),
     ]
 }
